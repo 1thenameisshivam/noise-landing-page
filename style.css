@@ -1,0 +1,205 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+}
+html,body{
+    width:100%;
+    height: 100%;
+}
+#main{
+    width:100%;
+    min-height: 100vh;
+}
+#top{
+     width: 100%;
+     min-height: 60vh;
+     background-image: url(https://plus.unsplash.com/premium_photo-1669562720263-521e750ba667?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80);
+     background-size: cover;
+     background-position: 50% 60%;
+}
+#bottom{
+    width: 100%;
+    min-height: 40vh;
+    background-color:violet;
+    display: flex;
+}
+#bone{
+    width: 25%;
+    min-height: inherit;
+    background-color:white;
+    padding: 30px;
+    transition: .5s;
+}
+#bone p{
+    font-size: 12px;
+    margin-top: 20px;
+}
+#btwo{
+    width: 25%;
+    min-height: inherit;
+    background-image: url(https://images.unsplash.com/photo-1515214762277-4c554d2b9bc0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=437&q=80);
+    background-position: center;
+    background-size: cover;
+}
+#bthree{
+    width: 20%;
+    min-height: inherit;
+    background-color:royalblue;
+
+}
+
+#bfour{
+    width: 30%;
+    min-height: inherit;
+    background-color:#444 ;
+    color: white;
+    padding: 30px;
+}
+#bt-top{
+    width: 100%;
+    min-height: 20vh;
+    background-color: orange;
+    padding: 20px;
+    color: aliceblue;
+    transition: .7s;
+}
+#bt-top p{
+    font-size: 12px;
+}
+#bt-bottom{
+    width: 100%;
+    min-height: 20vh;
+    background-image: url(https://images.unsplash.com/photo-1519017768885-bc3d13d32ea6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1332&q=80);
+    background-size: cover;
+}
+#overlay{
+    width: 100%;
+    min-height:inherit;
+    background-color: rgba(0, 0, 0, 0.288);
+    position: relative;
+}
+#text{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0px 10vw;
+    /* background-color: red; */
+    position: absolute;
+    bottom: 20%;
+    color: white;
+}
+#text h1{
+    font-size: 6vw;
+    font-weight: 500px;
+    transition: .9s;
+}
+#text-right{
+    display: flex;
+    width: 60%;
+  
+    justify-content: space-between;
+}
+#icon{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+#text h1:hover{
+    color: black;
+}
+.ri-instagram-line{
+    transition: .6s;
+}
+.ri-twitter-line{
+    transition: .6s;
+}
+.ri-facebook-circle-line{
+    transition: .6s;
+}
+.ri-instagram-line:hover{
+    color: rgb(207, 37, 113);
+    font-size: 40px;
+}
+.ri-twitter-line:hover{
+    color: royalblue;
+    font-size: 40px;
+}
+.ri-facebook-circle-line:hover{
+    color: royalblue;
+    font-size: 40px;
+}
+#text-right p{
+    transition: .6s;
+}
+#text-right p:hover{
+    color: black;
+}
+.notf{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 40px;
+}
+.notf .img{
+    width: 40px;
+    height: 40px;
+    background-image: url(https://plus.unsplash.com/premium_photo-1689568126014-06fea9d5d341?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80);
+    background-position: center;
+    background-size: cover;
+    border-radius: 50px;
+    
+}
+.notf p{
+    width: 88%;
+}
+#bt-top:hover{
+    color:gray;
+    font-size: 20px;
+}
+#bone:hover{
+    font-size: 40px;
+    color: gray;
+    background-color: black;
+}
+@media(max-width: 586px){
+    #overlay #text{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #overlay #text #text-right{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #overlay #text #text-right p{
+        width:initial;
+        margin-top: 20px;
+    }
+    #overlay #text #text-right #icon{
+            margin-top: 40px;
+    }
+    #text h1{
+        font-size: 10vw;
+    }
+    #bottom{
+        flex-direction: column;
+    }
+    #bone{
+        width: 100%;
+    }
+    #btwo{
+        width: 100%;
+    }
+    #bthree{
+        flex-direction: column;
+        width: 100%;
+    }
+    #bfour{
+        width: 100%;
+    }
+}
